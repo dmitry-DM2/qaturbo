@@ -21,6 +21,7 @@ public class MainPage extends BaseActions {
     }
 
     public void clickChatButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.CHAT_IFRAME_BUTTON));
         driver.findElement(Locators.CHAT_IFRAME_BUTTON).click();
     }
 
